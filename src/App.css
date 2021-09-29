@@ -66,4 +66,10 @@
     font-family: 'Rift Bold', sans-serif;
     text-transform: uppercase;
   }
+
+  .video-container {
+    padding: 1em;
+    background-color: #ccc;
+    text-align: center;
+  }
   
