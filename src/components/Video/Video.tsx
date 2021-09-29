@@ -31,7 +31,7 @@ export const Video: FunctionComponent<VideoProp> = (props) => {
                 // GET the video borders and the top point
                 let videoClientRect = thisVideoEl.getBoundingClientRect().top;
 
-                if (videoClientRect <= windowHeight / 2) {
+                if (videoClientRect > 0 && videoClientRect <= windowHeight / 2) {
                     if(!isVideoWatcherRunning) {
                         await setIsVideoWatcherRunning(true);
                         thisVideoEl.play();
