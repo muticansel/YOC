@@ -7,7 +7,6 @@ interface VideoProp {
 
 export const Video: FunctionComponent<VideoProp> = (props) => {
     const { source } = props;
-    const [timePlayed, setTimePlayed] = useState(0);
     const [isVideoWatcherRunning, setIsVideoWatcherRunning] = useState(false);
 
     const videoContainerRef = useRef(null);
